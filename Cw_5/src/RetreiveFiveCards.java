@@ -22,9 +22,7 @@ public class RetreiveFiveCards {
 
     public void RetreiveAnotherFive(){
         Random gen = new Random();
-        for (int i =0 ;i < this.Cards.length;i++)
-        {
+        
             IntStream.range(0, this.Cards.length).forEach(i -> this.Cards[i] = (this.Colors.get(gen.nextInt(3))).concat(" " + this.Figure.get(gen.nextInt(5))));
-        }
     }
 }
